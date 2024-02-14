@@ -1,0 +1,138 @@
+:root{
+    --snap-bg: #FFFC00;
+}
+
+body{
+    background-color: #e5e5e5;
+    display: flex;
+    height: 100vh;
+    justify-content: start;
+    padding-left: 20px;
+    align-items: center;
+}
+.container{
+    background-color: white;
+    height: 90vh;
+    width: 375px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: var(--snap-bg);
+    height: 88px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.header img{
+    width: 58px;
+    height: fit-content;
+}
+
+.main{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-rounded{
+    width: 228px;
+    font-size: large;
+    border-radius: 20%;
+}
+
+.log-in-google{
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: var(--snap-bg);
+    padding: 10px 13px;
+    width: 50%;
+}
+
+.troube-span{
+    font-size: smaller;
+    margin-top: 10px;
+}
+
+.or-span{
+    color: grey;
+    margin: 20px 0;
+}
+
+.username-input, .password-input{
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+
+.input-parent{
+    margin: 20px 0;
+    position: relative;
+    
+}
+
+label {
+    color: grey;
+    font-size: smaller;
+    position: absolute;
+    top: -9px;
+    left: 0;
+    transition: 0.3s ease-out;
+    cursor: text;
+    height: 1.8rem;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+input:focus + label,
+input:valid + label{
+    top: -25px;
+    pointer-events: none;
+}
+
+
+
+.forget-span{
+    color: blue;
+    font-size: smaller;
+    align-self: flex-end;
+    margin: 10px 0;
+}
+
+.login-btn{
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: grey;
+    color: white;
+    padding: 8px 13px;
+    width: 70%;
+}
+
+.login-btn-active{
+    background-color: var(--snap-bg);
+    color: black;
+}
+
+.no-account{
+    font-size: smaller;
+    margin: 25px;
+}
+
+.log-in-google, .forget-span, .login-btn, b{
+    cursor: pointer;
+}

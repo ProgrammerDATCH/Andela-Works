@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapChat - Login</title>
+    <link rel="stylesheet" href="snap-style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img src="assets/snapchat.png" alt="SnapChat Logo"/>
+        </div>
+        <div class="main">
+            <h2>Welcome Back!</h2>
+            <button class="log-in-google">Log In via Google</button>
+            <span class="troube-span">Trouble Logging In?</span>
+            <span class="or-span">OR</span>
+
+            <form action="" id="loginForm">
+
+                <div class="input-parent">
+                    <input type="text" name="username" id="usernameInput" class="username-input" required>
+                    <label for="usernameInput">USERNAME OR EMAIL</label>
+                </div>
+
+                <div class="input-parent">
+                    <input type="password" name="password" id="passwordInput" class="password-input" required>
+                    <label for="passwordInput">PASSWORD</label>
+                </div>
+
+                <span class="forget-span">Forget password?</span>
+                <button class="login-btn" id="loginBtn">Log In</button>
+            </form>
+            
+            <span class="no-account"><b>Sign up</b> if you don't have an account</span>
+        </div>
+
+    </div>
+
+    <script src="snap-script.js"></script>
+</body>
+</html>
